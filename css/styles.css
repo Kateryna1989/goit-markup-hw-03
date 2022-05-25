@@ -5,6 +5,27 @@
   --accent-background-color: #2196f3;
   --accent-white-color: #ffff;
 }
+html {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+/*button {
+  cursor:pointer;
+}*/
+img {
+  display: block;
+}
 
 body {
   color: var(--primary-text-color);
@@ -13,20 +34,39 @@ body {
   background-color: #fff;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 1px solid red;
+}
+.section {
+  padding: 94px 0;
+}
+
 /* to delete all markers */
 .list {
+  /* padding: 0;
+  margin: 0; */
   list-style: none;
 }
 /* Buttons */
 .button {
+  /* display: inline-block;
+  border-radius: 4px;
+  padding: 6px, 22px;
+  min-width: 73px;
+height: 38px;
+text-align: center */
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   background: #f5f4fa;
   border-radius: 4px;
-  border: transparent;
+  border: 1px transparent;
   cursor: pointer;
+  margin-right: 8px;
 }
 button:focus,
 button:hover {
@@ -56,8 +96,15 @@ button:hover {
 .header-link:focus {
   color: var(--accent-color);
 }
+/* .header-link{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+} */
 
 .logo {
+  padding-top: 25x;
+  padding-bottom: 25px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -115,26 +162,60 @@ button:hover {
   color: #fff;
   background-color: var(--accent-background-color);
 }
+/* .filter-list{
+  padding-top: 94px;
+  padding-bottom: 94px;
+} */
 
 /* Projects section */
+
+/* .project-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+} */
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.project {
+  flex-basis: calc(100% / 3 - 30 px);
+  margin: 15px;
+  outline: 1px solid #eeeeee;
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-top: 20px;
+  padding: 0 24px;
 }
 .project-item {
   color: var(--secondary-text-color);
   line-height: 1.88;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 0 24px;
+}
 }
 
 /*---------------Index.html-------------- */
 /* hero */
 .hero {
+  /* text-align:center; */
   background-color: #2f303a;
 }
+
 .hero-title {
+  /* margin-top:0;
+  margin-bottom:0; 
+  text-align:center;
+  max-width:900px;
+  */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -152,6 +233,9 @@ button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--accent-white-color);
+  /* margin: 0 auto;
+  display: block;
+  margin-top:50px; */
 }
 .hero-button.hover,
 .hero-button-focus {
