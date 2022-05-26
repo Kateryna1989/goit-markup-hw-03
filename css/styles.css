@@ -46,18 +46,12 @@ body {
 
 /* to delete all markers */
 .list {
-  /* padding: 0;
-  margin: 0; */
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 /* Buttons */
 .button {
-  /* display: inline-block;
-  border-radius: 4px;
-  padding: 6px, 22px;
-  min-width: 73px;
-height: 38px;
-text-align: center */
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -67,6 +61,7 @@ text-align: center */
   border: 1px transparent;
   cursor: pointer;
   margin-right: 8px;
+  padding: 6px 22px;
 }
 button:focus,
 button:hover {
@@ -88,23 +83,18 @@ button:hover {
   text-decoration-color: var(--accent-color);
 }
 /* header */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header .link.current {
   color: var(--accent-color);
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
+.header .logo {
+  margin-right: 93px;
 }
-/* .header-link{
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-align: center;
-} */
-
 .logo {
-  padding-top: 25x;
-  padding-bottom: 25px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -122,7 +112,22 @@ button:hover {
   text-decoration-color: var(--accent-color);
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  padding: 24px 15px 25px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-link:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* contacts section */
+
 .contact-item {
   font-weight: 500;
   font-size: 14px;
@@ -130,49 +135,57 @@ button:hover {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.contact-item:hover,
-.contact-item:focus {
-  color: var(--accent-color);
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Footer */
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 .footer .logo {
   color: var(--accent-white-color);
+  margin-bottom: 20px;
+  display: inline-block;
 }
-.footer .ft-contact-item {
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--accent-white-color);
+  margin-bottom: 9px;
 }
 
+.footer .link:not(.address) {
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: inherit;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ft-contact-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 /* ------------Portfolio.html------------ */
 
 .filter-list .button.current {
   color: #fff;
   background-color: var(--accent-background-color);
 }
-/* .filter-list{
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
 /* Projects section */
-
-/* .project-text {
-  padding-top: 20px;
-  padding-bottom: 20px;
-} */
 
 .project-list {
   display: flex;
@@ -201,21 +214,14 @@ button:hover {
   margin-bottom: 20px;
   padding: 0 24px;
 }
-}
 
 /*---------------Index.html-------------- */
 /* hero */
 .hero {
-  /* text-align:center; */
   background-color: #2f303a;
 }
 
 .hero-title {
-  /* margin-top:0;
-  margin-bottom:0; 
-  text-align:center;
-  max-width:900px;
-  */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -233,9 +239,6 @@ button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--accent-white-color);
-  /* margin: 0 auto;
-  display: block;
-  margin-top:50px; */
 }
 .hero-button.hover,
 .hero-button-focus {
