@@ -194,7 +194,7 @@ button:hover {
 }
 
 .project {
-  flex-basis: calc(100% / 3 - 30 px);
+  flex-basis: calc(100% / 3 - 30px);
   margin: 15px;
   outline: 1px solid #eeeeee;
 }
@@ -221,6 +221,14 @@ button:hover {
   background-color: #2f303a;
 }
 
+.hero .container {
+  padding: 106px 252px;
+  /* max-width: 696px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -229,6 +237,7 @@ button:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 .hero-button {
   font-family: inherit;
@@ -239,6 +248,7 @@ button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--accent-white-color);
+  padding: 10px 32px;
 }
 .hero-button.hover,
 .hero-button-focus {
@@ -246,7 +256,19 @@ button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
 /* Features */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.features-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin: 15px;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -254,7 +276,7 @@ button:hover {
   text-transform: uppercase;
 }
 
-.features-item {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
@@ -265,6 +287,23 @@ button:hover {
   font-size: 36px;
   line-height: 1.17;
 }
+
+/* Photos */
+.works {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.card-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
+}
+
 /* our team */
 .team {
   background-color: #f5f4fa;
