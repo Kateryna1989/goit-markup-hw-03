@@ -253,6 +253,7 @@ button:hover {
 } */
 .features-list {
   padding-top: 94px;
+  padding-bottom: none;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
