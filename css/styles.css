@@ -248,10 +248,11 @@ button:hover {
 }
 
 /* Features */
-.features {
+/* .features {
   padding-top: 94px;
-}
+} */
 .features-list {
+  padding-top: 94px;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
