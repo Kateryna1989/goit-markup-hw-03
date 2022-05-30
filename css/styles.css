@@ -56,7 +56,6 @@ body {
   border-radius: 4px;
   border: 1px transparent;
   cursor: pointer;
-  margin-right: 8px;
   padding: 6px 22px;
 }
 button:focus,
@@ -77,6 +76,7 @@ button:hover {
 /* header */
 .header {
   border-bottom: 1px solid #ececec;
+  padding: 24px 15px;
 }
 
 .header .link.current {
@@ -107,7 +107,6 @@ button:hover {
 .header .container {
   display: flex;
   align-items: center;
-  padding: 24px 15px 25px;
 }
 
 .header-list {
@@ -179,6 +178,9 @@ button:hover {
   justify-content: center;
   margin-bottom: 50px;
 }
+.list-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 /* Projects section */
 .project-list {
@@ -189,7 +191,6 @@ button:hover {
 .project {
   flex-basis: calc(100% / 3 - 30px);
   margin: 15px;
-  outline: 1px solid #eeeeee;
 }
 .project-title {
   font-weight: 700;
@@ -197,29 +198,26 @@ button:hover {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  margin-top: 20px;
-  padding: 0 24px;
+  margin-bottom: 4px;
 }
 .project-item {
   color: var(--secondary-text-color);
   line-height: 1.88;
-  margin-top: 4px;
-  margin-bottom: 20px;
-  padding: 0 24px;
 }
-
+.project-info {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
 /*---------------Index.html-------------- */
 /* hero */
 .hero {
   background-color: #2f303a;
-}
-.hero .container {
-  padding: 106px 252px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 200px;
+  text-align: center;
 }
 .hero-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -227,6 +225,8 @@ button:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 .hero-button {
@@ -239,6 +239,7 @@ button:hover {
   border-radius: 4px;
   color: var(--accent-white-color);
   padding: 10px 32px;
+  border: none;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -247,6 +248,9 @@ button:hover {
 }
 
 /* Features */
+.features {
+  padding-top: 94px;
+}
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +265,7 @@ button:hover {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .features-text {
   font-size: 14px;
@@ -301,9 +306,6 @@ button:hover {
 .team {
   background-color: #f5f4fa;
 }
-.member-photo {
-  margin-bottom: 30px;
-}
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
@@ -313,6 +315,9 @@ button:hover {
 .team-member-position {
   line-height: 1.19;
   color: var(--secondary-text-color);
+}
+.member-info {
+  padding: 30px;
 }
 .link:hover,
 .link:focus {
