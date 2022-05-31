@@ -76,7 +76,7 @@ button:hover {
 /* header */
 .header {
   border-bottom: 1px solid #ececec;
-  padding: 24px 15px;
+  padding: 24px 0;
 }
 
 .header .link.current {
@@ -213,7 +213,7 @@ button:hover {
 /* hero */
 .hero {
   background-color: #2f303a;
-  padding: 200px;
+  padding: 200px 0;
   text-align: center;
 }
 .hero-title {
@@ -248,11 +248,10 @@ button:hover {
 }
 
 /* Features */
-/* .features {
+.features {
   padding-top: 94px;
-} */
+}
 .features-list {
-  padding-top: 94px;
   padding-bottom: none;
   display: flex;
   flex-wrap: wrap;
